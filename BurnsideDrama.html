@@ -1,0 +1,169 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Burnside Newsletter Web Page</title>
+<link rel="stylesheet" href="BurnsideStyles.css">
+</head>
+<body>
+	<div id="container">
+		<nav id="top-nav">
+			<img id="logo" src="images/burnside-blocks-dark.png" alt="Burnside Higher School News">
+			<div id="signin-section" class="top-nav-section">
+				<img id="signin-icon" src="images/login-icon.png" alt="log in icon">
+				<span id="signin-text">Sign in</span>
+			</div><!-- 	.end of sign-in div -->
+			<div class="top-nav-section top-nav-menu">SAC</div>
+			<div class="top-nav-section top-nav-menu">Eco Schools</div>
+			<div class="top-nav-section top-nav-menu">STEM</div>
+			<div class="top-nav-section top-nav-menu">Duke of Edinburgh</div>
+		</nav><!-- .end top nav bar -->
+		<div class="clear"></div>
+		
+		<header id="main-title">
+			<img id="badge" src="images/shield-42278_1280.png" alt="Burnside School Crest">
+			<h1>Newsletter</h1>
+		</header><!-- 	.end header section -->
+		<div class="clear"></div>
+			<nav id="main-nav">
+				<a href="BurnsideHome.html">Home</a>
+				<div class="dropdown">
+					<span>Expressive Arts</span>
+					<div class="dropdown-content">
+						<p><a href="#">Art</a></p>
+						<p><a href="#">Drama</a></p>
+						<p><a href="#">Music</a></p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>Health &amp; Wellbeing</span>
+					<div class="dropdown-content">
+						<p><a href="#">Home Economics</a></p>
+						<p><a href="#">Physical Education</a></p>
+						<p><a href="#">Personal &amp; Social Education</a></p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>Languages</span>
+					<div class="dropdown-content">
+						<p><a href="#">French</a></p>
+						<p><a href="#">German</a></p>
+						<p><a href="#">Italian</a></p>
+						<p><a href="#">Spanish</a></p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>Mathematics</span>
+					<div class="dropdown-content">
+						<p><a href="#">Attitude to Mathematics</a></p>
+						<p><a href="#">Mathematics</a></p>
+					</div>
+				</div>
+				<a href="#">Religious &amp; Moral Education</a>
+				<div class="dropdown">
+					<span>Sciences</span>
+					<div class="dropdown-content">
+						<p><a href="#">Biology</a></p>
+						<p><a href="BurnsideChemistry.html">Chemistry</a></p>
+						<p><a href="#">Physics</a></p>
+						<p><a href="#">CFE Science</a></p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>Social Sciences</span>
+					<div class="dropdown-content">
+						<p><a href="#">Classical Studies</a></p>
+						<p><a href="#">History</a></p>
+						<p><a href="#">Geography</a></p>
+						<p><a href="#">Modern Studies</a></p>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span>Technologies</span>
+					<div class="dropdown-content">
+						<p><a href="#">Admin &amp; IT</a></p>
+						<p><a href="#">Business Management</a></p>
+						<p><a href="#">Computing Science</a></p>
+						<p><a href="#">Design &amp; Manafacture</a></p>
+						<p><a href="#">Engineering Science</a></p>
+						<p><a href="#">Graphic Communication</a></p>
+						<p><a href="burnsidePageTech.html">Practical Craft Skills</a></p>
+					</div>
+				</div>
+			</nav><!-- 	.end of main-nav -->
+		<div class="clear"></div>
+		
+		<main id="main-container">
+			<div style="float:left; width:300px;">
+				<h2>Drama Opportunities</h2>
+				<p><img class="imageIconRight" src="images/curiousIncident.png">
+				The Drama department offer a variety of after-school activites
+				covering different acting experiences. These include groups on 
+				Shakespeare, improvisation and play writing. These clubs are 
+				used to prepare participants for the annual school show
+				which is presented in collaboration with the Music department. 
+				There are also several annual visits to local performances of plays 
+				and musicals.</p>
+				
+				<p>If you wish to put your name down for a Drama department visit to 
+				a performance, please fill-in the form on the right:</p>
+			</div>
+			
+			
+			
+			<div style="margin-left: 430px; margin-top: 25px;">
+				<h4>Register Your Interests</h4>
+				<form action="">
+				
+					First Name:<br>
+					<input type="text" name="firstname" size="30" maxlength="15" required>
+					<br>
+					<br>
+					Last Name:<br>
+					<input type="text" name="lastname" size="30" maxlength="15" required>
+					<br>
+					<br>
+					Select Play:<br>
+					<select name="play">
+						<option value="hamlet">Hamlet</option>
+						<option value="godot">Waiting for Godot</option>
+						<option value="brothers">Blood Brothers</option>
+						<option value="curious">Curious Incident</option>
+					</select>
+					<br><br>
+					
+					Number of Tickets Required (between 1 and 3) :
+					<input type="number" name="tickets" value="1" min="1" max="3">
+					<br><br>
+					
+					Choose Your Age: <br>
+					<input type="radio" name="age" value="12 to 14" checked>12-14
+					<input type="radio" name="age" value="15 to 16">15-16
+					<input type="radio" name="age" value="17 or over">Over 16
+					<br><br>
+					
+					If Required, Please delete and state any special requirements:
+					<textarea placeholder="none" style="resize: none;" name="message" rows="3" cols="50">None</textarea>
+					<br><br>
+					
+					<input type="submit" onclick="Alert('Form Entered')" value="submit">
+				</form>		<!--	.end of form -->
+			</div>
+			<section style="clear: both" id="newsArticle">
+				<p id="highlight" style="clear: both">
+					<img class="imageIconLeft" src="images/newsIcon.png"
+					onMouseOver="document.getElementById('highlight').style.color = 'darkRed'" 
+					onMouseOut="document.getElementById('highlight').style.color = 'black'">
+					<b>Thursday 13th June</b>
+					<br>
+					The Drama department is organising a trip to see 
+					"The Curious Incident of the Dog in the Night-Time".
+					Please complete the form above to enter your name for this
+					outting or other upcoming events.
+				
+			</section>
+		</main>		<!-- .end of main container -->
+		<br>
+		<footer>
+			Burnside High School, Department of Computing Science, Copyright &copy; 2018
+		</footer><!-- .end footer -->
+	</div><!-- .end container -->
